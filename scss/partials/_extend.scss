@@ -1,0 +1,11 @@
+@import "variables.scss";
+
+%botones {
+    border: 3px solid $titulos-fuente;
+    border-radius: 40%;
+    background-color: $color-principal;
+    padding: .5rem;
+    margin: 1rem;
+    font-weight: 600;
+    margin-left: 4rem;
+}

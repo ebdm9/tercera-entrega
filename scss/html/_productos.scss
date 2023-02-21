@@ -1,0 +1,85 @@
+@import "../partials/variables";
+@import "../partials/extend";
+@import "../partials/mixins";
+
+
+main .repuestos{
+    @include flex; 
+    padding: 1.5rem;
+    margin-top: 2em;
+    h1{
+        width: 100%;
+    }
+    div{
+        img{
+            margin: 1rem;
+        }
+    }
+    }
+
+    /*pantalla de escritorio*/
+@media screen and (min-width:1024px){    
+    .repuestos{
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 6;
+        grid-template-areas: 
+            "h1 h1"
+            "alternadores compresores"
+            "opticas tableros"
+            "motores rejillas"
+            "cristales espejos"
+            "footer footer";
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .repuestos h1{
+        grid-area: h1;
+    }
+
+
+    .alternadores{
+        grid-area: alternadores;
+    }
+
+    .compresores{
+        grid-area: compresores;
+    }
+
+    .opticas{
+        grid-area: opticas;
+    }
+
+    .tableros{
+        grid-area: tableros;
+    }
+
+    .motores{
+        grid-area: motores;
+    }
+
+    .rejillas{
+        grid-area: rejillas;
+    }
+
+    .cristales{
+        grid-area: cristales;
+    }
+
+    .espejos{
+        grid-area: espejos;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+
+}
+
+
+    
+
+
+

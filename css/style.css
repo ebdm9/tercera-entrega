@@ -1,0 +1,219 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*estilos de inicio*/
+main form .botones {
+  border: 3px solid #363530;
+  border-radius: 40%;
+  background-color: #495d66;
+  padding: .5rem;
+  margin: 1rem;
+  font-weight: 600;
+  margin-left: 4rem; }
+
+/*estilos de header*/
+.header-fondo {
+  background-color: #495d66; }
+
+body {
+  background-color: rgba(166, 175, 175, 0.706); }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em; }
+  main h1 {
+    width: 100%;
+    background-color: #767c7e;
+    padding: 2rem;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-top: 7rem;
+    text-align: center;
+    text-transform: uppercase; }
+  main .carousel {
+    margin-bottom: 4em;
+    text-align: center; }
+    main .carousel img {
+      width: 60%;
+      border-radius: 20px; }
+
+/*estilos de footer*/
+footer {
+  background-color: whitesmoke;
+  color: #363530;
+  text-align: center;
+  height: 5em;
+  margin-top: 5rem; }
+  footer img {
+    background-color: rgba(166, 175, 175, 0.706);
+    height: 3rem;
+    width: 3rem; }
+  footer h2 {
+    font-size: 0.7em; }
+
+/*estilos de productos*/
+main form .botones {
+  border: 3px solid #363530;
+  border-radius: 40%;
+  background-color: #495d66;
+  padding: .5rem;
+  margin: 1rem;
+  font-weight: 600;
+  margin-left: 4rem; }
+
+main .repuestos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  padding: 1.5rem;
+  margin-top: 2em; }
+  main .repuestos h1 {
+    width: 100%; }
+  main .repuestos div img {
+    margin: 1rem; }
+
+/*pantalla de escritorio*/
+@media screen and (min-width: 1024px) {
+  .repuestos {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 6;
+    grid-template-areas: "h1 h1" "alternadores compresores" "opticas tableros" "motores rejillas" "cristales espejos" "footer footer";
+    justify-content: center;
+    justify-items: center; }
+  .repuestos h1 {
+    grid-area: h1; }
+  .alternadores {
+    grid-area: alternadores; }
+  .compresores {
+    grid-area: compresores; }
+  .opticas {
+    grid-area: opticas; }
+  .tableros {
+    grid-area: tableros; }
+  .motores {
+    grid-area: motores; }
+  .rejillas {
+    grid-area: rejillas; }
+  .cristales {
+    grid-area: cristales; }
+  .espejos {
+    grid-area: espejos; }
+  footer {
+    grid-area: footer; } }
+
+/*estilos de preguntas*/
+main form .botones {
+  border: 3px solid #363530;
+  border-radius: 40%;
+  background-color: #495d66;
+  padding: .5rem;
+  margin: 1rem;
+  font-weight: 600;
+  margin-left: 4rem; }
+
+.cuestionario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em; }
+  .cuestionario .faq {
+    background-color: rgba(166, 175, 175, 0.706);
+    width: 70%;
+    text-align: center;
+    color: #363530;
+    font-weight: 400;
+    border-radius: 40px;
+    box-shadow: 5px 0 5px -2px #495d66; }
+    .cuestionario .faq .pregunta {
+      font-size: 1.5rem;
+      text-decoration: underline;
+      color: #495d66;
+      font-weight: 600; }
+    .cuestionario .faq ul li {
+      list-style: none; }
+
+/*estilos de nosotros*/
+main form .botones {
+  border: 3px solid #363530;
+  border-radius: 40%;
+  background-color: #495d66;
+  padding: .5rem;
+  margin: 1rem;
+  font-weight: 600;
+  margin-left: 4rem; }
+
+.historia {
+  text-align: center; }
+  .historia h2 {
+    padding: 1em;
+    display: block;
+    font-weight: 700;
+    border: 0.3rem solid #363530;
+    font-size: 2em; }
+  .historia .desktop {
+    display: none; }
+  .historia .mobtab {
+    text-transform: uppercase;
+    text-decoration: underline; }
+  .historia .card {
+    width: 17rem;
+    margin: 1rem;
+    background-color: #495d66;
+    padding: 2rem;
+    border: 2px solid #363530;
+    border-radius: 100%;
+    color: rgba(246, 250, 226, 0.925);
+    animation-name: animacion-cards;
+    animation-iteration-count: 1;
+    animation-duration: 3s; }
+
+@keyframes animacion-cards {
+  0% {
+    transform: scale(0.5); }
+  50% {
+    transform: scale(0.8); }
+  100% {
+    transform: scale(1); } }
+
+/*pantalla de escritorio*/
+@media screen and (min-width: 1024px) {
+  .valores {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; } }
+
+/*estilos de contacto*/
+main form .botones {
+  border: 3px solid #363530;
+  border-radius: 40%;
+  background-color: #495d66;
+  padding: .5rem;
+  margin: 1rem;
+  font-weight: 600;
+  margin-left: 4rem; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em; }
+  main .contacto {
+    margin-top: 0; }
+  main form {
+    border: 3px solid #495d66;
+    padding: 1rem; }
+    main form legend {
+      text-align: center;
+      font-weight: 500; }

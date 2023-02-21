@@ -1,0 +1,61 @@
+@import "../partials/extend";
+@import "../partials/mixins";
+@import "../partials/variables";
+
+.historia{
+    text-align: center;
+    h2{
+        padding: 1em;
+        display: block;
+        font-weight: 700;
+        border: .3rem solid $titulos-fuente;  
+        font-size: 2em;      
+    }
+    .desktop{
+        display: none;
+    }
+    .mobtab{
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    .card{
+        width: 17rem;
+        margin: 1rem;
+        background-color: $color-principal;
+        padding: 2rem;
+        border: 2px solid $titulos-fuente;
+        border-radius: 100%;
+        color: $color-secundario;
+        animation-name: animacion-cards;
+        animation-iteration-count: 1;
+        animation-duration: 3s;
+        
+    }
+    
+}
+
+@keyframes animacion-cards {
+    0%{
+        transform: scale(0.5);
+    }        
+
+    50%{
+        transform: scale(0.8);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*pantalla de escritorio*/
+@media screen and (min-width:1024px){
+    .valores{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+}
+

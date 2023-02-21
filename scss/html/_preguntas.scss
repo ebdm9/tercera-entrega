@@ -1,0 +1,26 @@
+@import "../partials/extend";
+@import "../partials/mixins";
+@import "../partials/variables";
+
+.cuestionario{
+    @include flex;    
+    .faq{
+        background-color: $bg-color;
+        width: 70%;
+        text-align: center;
+        color: $titulos-fuente;
+        font-weight: 400;
+        border-radius: 40px;
+        box-shadow: 5px 0 5px -2px $color-principal;
+      
+        .pregunta{
+            @include preguntas;
+        }
+        ul{
+            li{
+                list-style: none;
+            }
+        }
+       
+    }
+}

@@ -1,0 +1,27 @@
+@import "../partials/extend";
+@import "../partials/mixins";
+@import "../partials/variables";
+
+
+main{
+    @include flex;
+    .contacto{
+        margin-top: 0;
+    }
+    form{
+        border: 3px solid $color-principal;
+        padding: 1rem;
+        legend{
+            text-align: center;
+            font-weight: 500;
+        }
+        .botones{
+            @extend %botones;
+        }
+    }
+}
+
+
+
+
+

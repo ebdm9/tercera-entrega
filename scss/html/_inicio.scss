@@ -1,0 +1,43 @@
+@import "../partials/variables";
+@import "../partials/extend";
+@import "../partials/mixins";
+/*estilos de header*/
+.header-fondo{
+    background-color: $color-principal;
+}
+
+body{
+    background-color: $bg-color;
+}
+
+main{
+    @include flex;
+    h1{
+    @include h1-mobile;
+    }
+    .carousel{
+        margin-bottom: 4em;
+        text-align: center;
+        img{
+        width: 60%;
+        border-radius: 20px;
+        }
+    }
+}
+
+/*estilos de footer*/
+footer{
+    background-color: whitesmoke;
+    color: #363530;  
+    text-align: center;
+    height: 5em;
+    margin-top: 5rem;
+    img{
+        background-color: $bg-color;
+        height: 3rem;
+        width: 3rem;
+    }
+    h2{
+        font-size: 0.7em;
+    }
+}
